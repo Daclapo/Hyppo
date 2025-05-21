@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/dcp/Desktop/Hippo-prueba1/src/app/layout\":[\"static/media/155cae559bbd1a77-s.p.woff2\",\"static/media/4de1fea1a954a5b6-s.p.woff2\",\"static/media/6d664cce900333ee-s.p.woff2\",\"static/media/4f05ba3a6752a328-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"

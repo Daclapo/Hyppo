@@ -1,0 +1,37 @@
+'use client'
+
+import { useEffect } from 'react'
+
+export default function Error({
+  error,
+  reset,
+}) {
+  useEffect(() => {
+    console.error(error)
+  }, [error])
+
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-red-50 p-4">
+      <div className="max-w-md w-full bg-white p-6 rounded-lg shadow-lg">
+        <h2 className="text-xl font-bold text-red-600 mb-4">Error de carga</h2>
+        <p className="text-gray-700 mb-4">
+          Ha ocurrido un error al cargar el tema. Es posible que el tema ya no exista o no tengas permisos para verlo.
+        </p>
+        <div className="flex space-x-3">
+          <button
+            onClick={() => reset()}
+            className="bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-4 rounded transition-colors"
+          >
+            Intentar nuevamente
+          </button>
+          <button
+            onClick={() => window.location.href = '/topics'}
+            className="bg-gray-500 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded transition-colors"
+          >
+            Volver a temas
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}
